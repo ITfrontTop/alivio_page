@@ -15,17 +15,38 @@
     />
 
     <link rel="stylesheet" href="index.css" />
-    <style>
-      .icon {
-        width: 81px;
-        height: 30px;
-        fill: green;
-      }
-    </style>
   </head>
   <body>
-    <svg class="icon">
-      <use href="assets/spites.svg#logo-icon"></use>
-    </svg>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <svg class="logo">
+            <use href="assets/spites.svg#logo-icon"></use>
+          </svg>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Why Alivio</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Solutions</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Community</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <button type="button" class="btn btn--singin">Sing In</button>
+            <button type="button" class="btn">Start Trial</button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
