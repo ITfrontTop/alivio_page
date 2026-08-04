@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 70px;
+  column-gap: min(70px, 4vw);
 }
 
 .header__nav-item {
@@ -23,6 +24,7 @@
   font-size: 20px;
   font-weight: 500;
   color: var(--co-black);
+  white-space: nowrap;
 }
 
 .header__nav-link:hover {
@@ -31,4 +33,29 @@
 
 .header__nav-link:focus-visible {
   outline: 2px solid var(--co-dark-green);
+}
+
+.header__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .header__nav-link {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
 }

@@ -28,6 +28,7 @@ a {
 .logo {
   width: 81px;
   height: 30px;
+  flex-shrink: 0;
 }
 
 .btn {
